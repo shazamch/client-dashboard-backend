@@ -2,7 +2,7 @@ const cors = require('cors');
 
 const allowedOrigins = [
   'http://localhost:5173',
-  "https://client-dashboard-k37csbgqa-shazamchs-projects.vercel.app/",
+  "https://client-dashboard-beige.vercel.app/",
 ];
 
 const corsOptions = {
