@@ -35,7 +35,8 @@ app.use('/protected', authenticateToken);
 
 app.use('/auth', authRoutes);
 app.use('/protected/users', userRoutes);
-app.use('/protected/calls', callRoutes);
+// app.use('/protected/calls', callRoutes);
+app.use('/calls', callRoutes);
 
 const port = process.env.PORT || 3000;
 const dbConnect = require('./src/utils/dbConnect.js');
