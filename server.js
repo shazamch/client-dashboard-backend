@@ -27,11 +27,13 @@ app.use(responseHandler);
 
 const authRoutes = require('./src/routes/authRoutes.js');
 const userRoutes = require('./src/routes/userRoutes.js');
+const callRoutes = require('./src/routes/callRoutes.js')
 
 app.use('/protected', authenticateToken);
 
 app.use('/auth', authRoutes);
 app.use('/protected/users', userRoutes);
+app.use('/protected/calls', callRoutes);
 
 const port = process.env.PORT || 3000;
 const dbConnect = require('./src/utils/dbConnect.js');
