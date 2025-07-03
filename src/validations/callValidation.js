@@ -11,6 +11,7 @@ const createCall = {
     }).required(),
     agent: Joi.string().required(),
     purpose: Joi.string().allow("", null).optional(),
+    success: Joi.string().allow("", null).optional(),
     summary: Joi.string().required(),
     duration: Joi.number().positive().required(),
   }),

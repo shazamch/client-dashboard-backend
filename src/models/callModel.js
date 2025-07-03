@@ -17,6 +17,10 @@ const callSchema = new mongoose.Schema({
   purpose: {
     type: String, // optional for inbound calls
   },
+  success: {
+    type: String,
+    // enum: ['true', 'false'],
+  },
   summary: {
     type: String,
     required: true,
