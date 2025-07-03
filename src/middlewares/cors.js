@@ -2,8 +2,8 @@ const cors = require('cors');
 
 const allowedOrigins = [
   'http://localhost:5173',
-  "https://client-dashboard-beige.vercel.app/",
-  "https://client-dashboard-p0nu7cv71-shazamchs-projects.vercel.app/"
+  "https://client-dashboard-beige.vercel.app",
+  "https://client-dashboard-p0nu7cv71-shazamchs-projects.vercel.app"
 ];
 
 const corsOptions = {
@@ -16,9 +16,9 @@ const corsOptions = {
   },
   optionsSuccessStatus: 200,
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  allowedHeaders: ['Content-Type', 'Authorization', 'Access-Control-Allow-Origin'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true,
-  exposedHeaders: 'Authorization',
+  exposedHeaders: ['Authorization'],
 };
 
 module.exports = cors(corsOptions);
