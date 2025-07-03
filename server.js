@@ -13,7 +13,8 @@ const io = new Server(server, {
     cors: {
         origin: [
           "http://localhost:5173",
-          "https://client-dashboard-beige.vercel.app/"
+          "https://client-dashboard-beige.vercel.app/",
+          "https://client-dashboard-p0nu7cv71-shazamchs-projects.vercel.app/"
           ],
         methods: ['GET', 'POST'],
         credentials: true,
